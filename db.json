@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "partNumber": "Example",
+    "simpleFlag": 1,
+    "simpleString": "Example2",
+    "simpleObject": {
+        "intValue1": 1,
+        "intValue2": 2
+    },
+    "complexObject": {
+        "simpleObject": {
+            "intValue1": 1,
+            "intValue2": 2
+        },
+        "sampleList": [
+            "Item 1",
+            "Item 2"
+        ]
+    }
+}
