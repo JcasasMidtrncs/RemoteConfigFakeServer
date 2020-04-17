@@ -1,0 +1,9 @@
+{
+    "example_object": {
+        "name": "A Name"
+    },
+    "an_array": [
+        "Item 1",
+        "Item 2"
+    ]
+}
