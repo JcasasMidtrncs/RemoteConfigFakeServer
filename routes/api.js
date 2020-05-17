@@ -8,15 +8,15 @@ router.get('/api/config', function(req, res, next) {
     partNumber: "Example",
     internalPrintFormat: [
       {
-        "type": "InVehicleTest",
+        "type": "InVehicleChargeTest",
         "filename": "a_json1.json"
       },
       {
-        "type": " SystemTest",
+        "type": " OutOfVehicleChargeTest",
         "filename": "a_json2.json"
       },
       {
-        "type": "DeviceInfo",
+        "type": "BatteryDiagnostics",
         "filename": "a_json.json"
       }
     ]
