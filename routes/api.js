@@ -112,6 +112,116 @@ const bmisConfiguration = {
   password: "BmisEncryptedPassword"
 };
 
+const decisionMappingSchema = {
+  "decisionStringMappingList": [
+    {
+      "type": "batteryTest",
+      "decisionStringTypeMappings": [
+        {
+          "type": "overall",
+          "decisionStringMapList": [
+            {
+              "decision": 0,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 1,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 2,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 3,
+              "tableNumber": 1,
+              "translationNumber": 1
+            }
+          ]
+        },
+        {
+          "type": "cranking",
+          "decisionStringMapList": [
+            {
+              "decision": 0,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 1,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 2,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 3,
+              "tableNumber": 1,
+              "translationNumber": 1
+            }
+          ]
+        },
+        {
+          "type": "rc",
+          "decisionStringMapList": [
+            {
+              "decision": 0,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 1,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 2,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 3,
+              "tableNumber": 1,
+              "translationNumber": 1
+            }
+          ]
+        },
+        {
+          "type": "dca",
+          "decisionStringMapList": [
+            {
+              "decision": 0,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 1,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 2,
+              "tableNumber": 1,
+              "translationNumber": 1
+            },
+            {
+              "decision": 3,
+              "tableNumber": 1,
+              "translationNumber": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
 const configFileJson = {
   version: 1,
   partNumber: "APartNumber-123",
@@ -121,7 +231,8 @@ const configFileJson = {
   deepDischargeMaxTime: 120,
   customerLogo,
   testCodes,
-  bmisConfiguration
+  bmisConfiguration,
+  decisionMappingSchema
 };
 
 /* GET users listing. */
@@ -129,7 +240,7 @@ router.get('/api/config', (req, res, next) => {
   res.send(configFileJson);
 });
 
-router.get('/api/config/configVersion', (req, res, next) => {
+router.get('/api/config/version', (req, res, next) => {
   res.send({
     version: 1
   });
