@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "defectStringMappingList": [
+    {
+      "name": "CA1",
+      "stopBit": 0,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CA2",
+      "stopBit": 1,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CA3",
+      "stopBit": 2,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CA4",
+      "stopBit": 3,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CA5",
+      "stopBit": 4,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CA6",
+      "stopBit": 5,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CA7",
+      "stopBit": 6,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "RC1",
+      "stopBit": 7,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC2",
+      "stopBit": 8,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC3",
+      "stopBit": 9,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC4",
+      "stopBit": 10,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 4
+      }
+    },
+    {
+      "name": "RC5",
+      "stopBit": 11,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "RC6",
+      "stopBit": 12,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "RC7",
+      "stopBit": 13,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC8",
+      "stopBit": 14,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC9",
+      "stopBit": 15,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC10",
+      "stopBit": 16,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "RC11",
+      "stopBit": 17,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "CCA1",
+      "stopBit": 18,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CCA2",
+      "stopBit": 19,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CCA3",
+      "stopBit": 20,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 2
+      }
+    },
+    {
+      "name": "CCA4",
+      "stopBit": 21,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 2
+      }
+    },
+    {
+      "name": "CCA5",
+      "stopBit": 22,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 3
+      }
+    },
+    {
+      "name": "CCA6",
+      "stopBit": 23,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 3
+      }
+    },
+    {
+      "name": "CCA7",
+      "stopBit": 24,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 3
+      }
+    },
+    {
+      "name": "CCA8",
+      "stopBit": 25,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "CCA9",
+      "stopBit": 26,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "CCA10",
+      "stopBit": 27,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "CCA11",
+      "stopBit": 28,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "CCA12",
+      "stopBit": 29,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "CCA13",
+      "stopBit": 30,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 3
+      }
+    },
+    {
+      "name": "CCA14",
+      "stopBit": 31,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "CCA15",
+      "stopBit": 32,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC1",
+      "stopBit": 33,
+      "bmisDefectType": 1,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC2",
+      "stopBit": 34,
+      "bmisDefectType": 1,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC3",
+      "stopBit": 35,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC4",
+      "stopBit": 36,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC5",
+      "stopBit": 37,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC6",
+      "stopBit": 38,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC7",
+      "stopBit": 39,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 0
+      }
+    },
+    {
+      "name": "DC8",
+      "stopBit": 40,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC9",
+      "stopBit": 41,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC10",
+      "stopBit": 42,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "DC11",
+      "stopBit": 43,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC12",
+      "stopBit": 44,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC13",
+      "stopBit": 45,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC14",
+      "stopBit": 46,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC15",
+      "stopBit": 47,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC16",
+      "stopBit": 48,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC17",
+      "stopBit": 49,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC18",
+      "stopBit": 50,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC19",
+      "stopBit": 51,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 1
+      }
+    },
+    {
+      "name": "DC20",
+      "stopBit": 52,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    },
+    {
+      "name": "DC21",
+      "stopBit": 53,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 0
+      }
+    },
+    {
+      "name": "DC22 ",
+      "stopBit": 54,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": 0
+      }
+    },
+    {
+      "name": "N/A",
+      "stopBit": -1,
+      "bmisDefectType": 0,
+      "defectString": {
+        "transTable": 0,
+        "transNum": -1
+      }
+    }
+  ]
+}

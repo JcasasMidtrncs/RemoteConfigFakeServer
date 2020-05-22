@@ -164,9 +164,45 @@ const configFileJson = {
   brickBehavior: brickBehavior
 };
 
+const may22Configuration = {
+  "version": 1,
+  "partNumber": "192-011507",
+  "translationDatabase": "192-011507-translations-v1.db",
+  "internalPrintFormat": {
+    "formats": [
+      {
+        "type": "InVehicleChargeTest",
+        "filename": "192-011507-internalPrint-inv_charge-v1.json"
+      },
+      {
+        "type": "OutOfVehicleChargeTest",
+        "filename": "192-011507-internalPrint-oov_charge-v1.json"
+      },
+      {
+        "type": " BatteryDiagnostics",
+        "filename": "192-011507-internalPrint-batDiag-v1.json"
+      },
+      {
+        "type": "ChargeTest",
+        "filename": "192-011507-internalPrint-charge-v1.json"
+      },
+      {
+        "type": "SystemTest",
+        "filename": "192-011507-internalPrint-system-v1.json"
+      },
+      {
+        "type": "Footer",
+        "filename": "192-011507-footer-v1.json"
+      }
+    ]
+  },
+  "decisionMappingSchema": "192-011507-dcadecisionmapping-v1.json",
+  "dcaDefectStringMapping": "192-011507-dcadefectmapping-v1.json"
+};
+
 /* GET users listing. */
 router.get('/api/config', (req, res, next) => {
-  res.send(configFileJson);
+  res.send(may22Configuration);
 });
 
 router.get('/api/config/version', (req, res, next) => {
@@ -178,29 +214,29 @@ router.get('/api/config/version', (req, res, next) => {
 router.get('/api/getFile', (req, res, next) => {
   const fileName = req.query.fileName;
   switch(fileName) {
-    case "in_vehicle_print_format.json":
-      sendFile(res, "fake_print_json.json");
+    case "192-011507-internalPrint-inv_charge-v1.json":
+      sendFile(res, "192-011507-internalPrint-inv_charge-v1.json");
       break;
-    case "out_of_vehicle_print_format.json":
-      sendFile(res, "fake_print_json.json");
+    case "192-011507-internalPrint-oov_charge-v1.json":
+      sendFile(res, "192-011507-internalPrint-oov_charge-v1.json");
       break;
-    case "battery_diagnostics_print_format.json":
-      sendFile(res, "fake_print_json.json");
+    case "192-011507-internalPrint-batDiag-v1.json":
+      sendFile(res, "192-011507-internalPrint-batDiag-v1.json");
       break;
-    case "charge_test_print_format.json":
-      sendFile(res, "fake_print_json.json");
+    case "192-011507-internalPrint-charge-v1.json":
+      sendFile(res, "192-011507-internalPrint-charge-v1.json");
       break;
-    case "system_test_print_format.json":
-      sendFile(res, "fake_print_json.json");
+    case "192-011507-internalPrint-system-v1.json":
+      sendFile(res, "192-011507-internalPrint-system-v1.json");
       break;
-    case "footer_print_format.json":
-      sendFile(res, "fake_print_json.json");
+    case "192-011507-footer-v1.json":
+      sendFile(res, "192-011507-footer-v1.json");
       break;
-    case "translations.db":
-      sendFile(res, "translations.db");
+    case "192-011507-dcadecisionmapping-v1.json":
+      sendFile(res, "192-011507-dcadecisionmapping-v1.json");
       break;
-    case "decisionMappings.json":
-      sendFile(res, "decision_mapping_schema.json");
+    case "192-011507-dcadefectmapping-v1.json":
+      sendFile(res, "192-011507-dcadefectmapping-v1.json");
       break;
     default:
       res.status(404).send({ success: false });

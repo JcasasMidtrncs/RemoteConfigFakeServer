@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "printFields": [
+    {
+      "type": 0,
+      "fieldDataLogo": {
+        "logoId": 1,
+        "align": 1
+      }
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "align": 1,
+        "valueSource": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 1,
+        "labelTableNumber": 1,
+        "valueSource": 2,
+        "textPairLayout": 1
+      }
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 3,
+        "align": 1
+      }
+    },
+    {
+      "type": 3
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 6,
+        "align": 1,
+        "usesUpperCase": true
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 13,
+        "labelTableNumber": 1,
+        "valueSource": 2,
+        "textPairLayout": 1,
+        "emptyFieldBehavior": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 2,
+        "labelTableNumber": 1,
+        "valueSource": 7,
+        "textPairLayout": 0,
+        "emptyFieldBehavior": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 9,
+        "labelTableNumber": 1,
+        "valueSource": 14,
+        "textPairLayout": 0,
+        "emptyFieldBehavior": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 4,
+        "labelTableNumber": 1,
+        "valueSource": 9,
+        "textPairLayout": 0,
+        "emptyFieldBehavior": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 14,
+        "labelTableNumber": 1,
+        "valueSource": 19,
+        "textPairLayout": 0,
+        "emptyFieldBehavior": 1
+      }
+    },
+    {
+      "type": 3
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 10,
+        "labelTableNumber": 1,
+        "valueSource": 15,
+        "textPairLayout": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 5,
+        "labelTableNumber": 1,
+        "valueSource": 10,
+        "textPairLayout": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 6,
+        "labelTableNumber": 1,
+        "valueSource": 11,
+        "textPairLayout": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 11,
+        "labelTableNumber": 1,
+        "valueSource": 16,
+        "textPairLayout": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 12,
+        "labelTableNumber": 1,
+        "valueSource": 17,
+        "textPairLayout": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 8,
+        "labelTableNumber": 1,
+        "valueSource": 13,
+        "textPairLayout": 0
+      }
+    },
+    {
+      "type": 3
+    }
+  ]
+}

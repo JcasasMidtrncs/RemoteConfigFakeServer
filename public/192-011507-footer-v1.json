@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "printFields": [
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 200,
+        "align": 1
+      }
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 201,
+        "align": 1
+      }
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 202,
+        "align": 1
+      }
+    }
+  ]
+}

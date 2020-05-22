@@ -1,0 +1,186 @@
+{
+  "decisionMappingSchema": {
+    "decisionStringMappingList": [
+      {
+        "type": "batteryTest",
+        "decisionStringTypeMappings": [
+          {
+            "type": "cranking",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 2,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 2,
+                "translationNumber": 1
+              },
+              {
+                "decision": 2,
+                "tableNumber": 2,
+                "translationNumber": 1
+              },
+              {
+                "decision": 3,
+                "tableNumber": 2,
+                "translationNumber": 1
+              },
+              {
+                "decision": 4,
+                "tableNumber": 2,
+                "translationNumber": 2
+              },
+              {
+                "decision": 5,
+                "tableNumber": 2,
+                "translationNumber": 3
+              },
+              {
+                "decision": 6,
+                "tableNumber": 2,
+                "translationNumber": 3
+              },
+              {
+                "decision": 9,
+                "tableNumber": 2,
+                "translationNumber": 3
+              },
+              {
+                "decision": 27,
+                "tableNumber": 2,
+                "translationNumber": 3
+              }
+            ]
+          },
+          {
+            "type": "reserveCapacity",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 3,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 2,
+                "tableNumber": 3,
+                "translationNumber": 3
+              },
+              {
+                "decision": 3,
+                "tableNumber": 3,
+                "translationNumber": 3
+              },
+              {
+                "decision": 5,
+                "tableNumber": 3,
+                "translationNumber": 3
+              },
+              {
+                "decision": 6,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 7,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 8,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 9,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 10,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 11,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 12,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 13,
+                "tableNumber": 3,
+                "translationNumber": 2
+              },
+              {
+                "decision": 250,
+                "tableNumber": 3,
+                "translationNumber": 3
+              },
+              {
+                "decision": 255,
+                "tableNumber": 3,
+                "translationNumber": 3
+              }
+            ]
+          },
+          {
+            "type": "chargeAcceptance",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 4,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 4,
+                "translationNumber ": 2
+              },
+              {
+                "decision": 2,
+                "tableNumber": 4,
+                "translationNumber ": 2
+              },
+              {
+                "decision": 3,
+                "tableNumber": 4,
+                "translationNumber ": 2
+              },
+              {
+                "decision": 4,
+                "tableNumber": 4,
+                "translationNumber ": 2
+              },
+              {
+                "decision": 5,
+                "tableNumber": 4,
+                "translationNumber ": 2
+              },
+              {
+                "decision": 250,
+                "tableNumber": 4,
+                "translationNumber ": 3
+              },
+              {
+                "decision": 255,
+                "tableNumber": 4,
+                "translationNumber": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
