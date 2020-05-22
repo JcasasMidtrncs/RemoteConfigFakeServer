@@ -32,14 +32,22 @@ const internalPrintFormatList = {
 };
 
 const boostVoltageSchema = {
-  inVehicle: {
-    chemistry: 120,
-    voltage: 200
-  },
-  outOfVehicle: {
-    chemistry: 130,
-    voltage: 220
-  }
+  inVehicle: [
+    {
+      chemistry: 1,
+      voltage: 200
+    }
+  ],
+  outOfVehicle: [
+    {
+      chemistry: 2,
+      voltage: 220
+    },
+    {
+      chemistry: 3,
+      voltage: 130
+    }
+  ]
 };
 
 const customerLogo = {
@@ -112,112 +120,32 @@ const bmisConfiguration = {
   password: "BmisEncryptedPassword"
 };
 
-const decisionMappingSchema = {
-  "decisionStringMappingList": [
+const brickBehavior = {
+  conditions: [
     {
-      "type": "batteryTest",
-      "decisionStringTypeMappings": [
+      type: 1,
+      conditionData: [
         {
-          "type": "overall",
-          "decisionStringMapList": [
-            {
-              "decision": 0,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 1,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 2,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 3,
-              "tableNumber": 1,
-              "translationNumber": 1
-            }
-          ]
-        },
-        {
-          "type": "cranking",
-          "decisionStringMapList": [
-            {
-              "decision": 0,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 1,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 2,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 3,
-              "tableNumber": 1,
-              "translationNumber": 1
-            }
-          ]
-        },
-        {
-          "type": "rc",
-          "decisionStringMapList": [
-            {
-              "decision": 0,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 1,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 2,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 3,
-              "tableNumber": 1,
-              "translationNumber": 1
-            }
-          ]
-        },
-        {
-          "type": "dca",
-          "decisionStringMapList": [
-            {
-              "decision": 0,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 1,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 2,
-              "tableNumber": 1,
-              "translationNumber": 1
-            },
-            {
-              "decision": 3,
-              "tableNumber": 1,
-              "translationNumber": 1
-            }
-          ]
+          "wifiThreshold": 3000
         }
-      ]
+      ],
+      brickAction: {
+        actionType: 1
+      }
+    },
+    {
+      type: 2,
+      conditionData: [
+        {
+          "ssid": "encryptedSSID"
+        },
+        {
+          "ssidThreshold": 3000
+        }
+      ],
+      brickAction: {
+        actionType: 1
+      }
     }
   ]
 };
@@ -232,7 +160,8 @@ const configFileJson = {
   customerLogo,
   testCodes,
   bmisConfiguration,
-  decisionMappingSchema
+  decisionMappingSchema: 'decisionMappings.json',
+  brickBehavior: brickBehavior
 };
 
 /* GET users listing. */
@@ -246,7 +175,7 @@ router.get('/api/config/version', (req, res, next) => {
   });
 });
 
-router.get('/getFile', (req, res, next) => {
+router.get('/api/getFile', (req, res, next) => {
   const fileName = req.query.fileName;
   switch(fileName) {
     case "in_vehicle_print_format.json":
@@ -269,6 +198,9 @@ router.get('/getFile', (req, res, next) => {
       break;
     case "translations.db":
       sendFile(res, "translations.db");
+      break;
+    case "decisionMappings.json":
+      sendFile(res, "decision_mapping_schema.json");
       break;
     default:
       res.status(404).send({ success: false });

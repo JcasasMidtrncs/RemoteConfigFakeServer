@@ -1,0 +1,109 @@
+{
+    "decisionStringMappingList": [
+      {
+        "type": "batteryTest",
+        "decisionStringTypeMappings": [
+          {
+            "type": "overall",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 2,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 3,
+                "tableNumber": 1,
+                "translationNumber": 1
+              }
+            ]
+          },
+          {
+            "type": "cranking",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 2,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 3,
+                "tableNumber": 1,
+                "translationNumber": 1
+              }
+            ]
+          },
+          {
+            "type": "rc",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 2,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 3,
+                "tableNumber": 1,
+                "translationNumber": 1
+              }
+            ]
+          },
+          {
+            "type": "dca",
+            "decisionStringMapList": [
+              {
+                "decision": 0,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 1,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 2,
+                "tableNumber": 1,
+                "translationNumber": 1
+              },
+              {
+                "decision": 3,
+                "tableNumber": 1,
+                "translationNumber": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
