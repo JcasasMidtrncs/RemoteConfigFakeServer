@@ -1,8 +1,7 @@
 {
-  "decisionMappingSchema": {
     "decisionStringMappingList": [
       {
-        "type": "batteryTest",
+        "type": "battery_test",
         "decisionStringTypeMappings": [
           {
             "type": "cranking",
@@ -55,7 +54,7 @@
             ]
           },
           {
-            "type": "reserveCapacity",
+            "type": "rc",
             "decisionStringMapList": [
               {
                 "decision": 0,
@@ -135,7 +134,7 @@
             ]
           },
           {
-            "type": "chargeAcceptance",
+            "type": "dca",
             "decisionStringMapList": [
               {
                 "decision": 0,
@@ -182,5 +181,4 @@
         ]
       }
     ]
-  }
 }

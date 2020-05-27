@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "printFields": [
+    {
+      "type": 3
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 100,
+        "align": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 100,
+        "labelTableNumber": 1,
+        "valueSource": 101,
+        "align": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 101,
+        "labelTableNumber": 1,
+        "valueSource": 102,
+        "align": 0
+      }
+    },
+    {
+      "type": 3
+    },
+    {
+      "type": 1,
+      "fieldDataText": {
+        "valueSource": 100,
+        "align": 1
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 100,
+        "labelTableNumber": 1,
+        "valueSource": 101,
+        "align": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 101,
+        "labelTableNumber": 1,
+        "valueSource": 102,
+        "align": 0
+      }
+    },
+    {
+      "type": 2,
+      "fieldDataTextPair": {
+        "labelTranslationNumber": 101,
+        "labelTableNumber": 1,
+        "valueSource": 102,
+        "align": 0
+      }
+    },
+    {
+      "type": 3
+    }
+  ]
+}

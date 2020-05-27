@@ -1,0 +1,35 @@
+{
+    "conditions": [
+        {
+            "type": 0,
+            "conditionData": {
+                "threshold": 1,
+                "timeUnit": "days"
+            },
+            "brickAction": {
+                "actionType": 1
+            }
+        },
+        {
+            "type": 1,
+            "conditionData": {
+                "threshold": 2,
+                "timeUnit": "days"
+            },
+            "brickAction": {
+                "actionType": 1
+            }
+        },
+        {
+            "type": 2,
+            "conditionData": {
+                "threshold": 2,
+                "timeUnit": "days",
+                "ssid": "EncryptedSSID"
+            },
+            "brickAction": {
+                "actionType": 1
+            }
+        }
+    ]
+}

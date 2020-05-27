@@ -167,6 +167,9 @@ const configFileJson = {
 const may22Configuration = {
   "version": 1,
   "partNumber": "192-011507",
+  "conditions": {
+
+  },
   "translationDatabase": "192-011507-translations-v1.db",
   "internalPrintFormat": {
     "formats": [
@@ -197,7 +200,42 @@ const may22Configuration = {
     ]
   },
   "decisionMappingSchema": "192-011507-dcadecisionmapping-v1.json",
-  "dcaDefectStringMapping": "192-011507-dcadefectmapping-v1.json"
+  "dcaDefectStringMapping": "192-011507-dcadefectmapping-v1.json",
+  "brickBehavior": {
+      "conditions": [
+          {
+              "type": 0,
+              "conditionData": {
+                  "threshold": 1,
+                  "timeUnit": "days"
+              },
+              "brickAction": {
+                  "actionType": 1
+              }
+          },
+          {
+              "type": 1,
+              "conditionData": {
+                  "threshold": 2,
+                  "timeUnit": "days"
+              },
+              "brickAction": {
+                  "actionType": 1
+              }
+          },
+          {
+              "type": 2,
+              "conditionData": {
+                  "threshold": 2,
+                  "timeUnit": "days",
+                  "ssid": "EncryptedSSID"
+              },
+              "brickAction": {
+                  "actionType": 1
+              }
+          }
+      ]
+  }
 };
 
 /* GET users listing. */
@@ -235,8 +273,17 @@ router.get('/api/getFile', (req, res, next) => {
     case "192-011507-dcadecisionmapping-v1.json":
       sendFile(res, "192-011507-dcadecisionmapping-v1.json");
       break;
+    case "192-011507-footer-v1.json":
+      sendFile(res, "192-011507-footer-v1.json");
+      break;
+    case "192-011507-translations-v1.db":
+      sendFile(res, "192-011507-translations-v1.db");
+      break;
     case "192-011507-dcadefectmapping-v1.json":
       sendFile(res, "192-011507-dcadefectmapping-v1.json");
+      break;
+    case "192-011507-brickbehavior-v1.json":
+      sendFile(res, "192-011507-brickbehavior-v1.json");
       break;
     default:
       res.status(404).send({ success: false });
