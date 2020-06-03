@@ -115,7 +115,7 @@ const testCodes = {
   ]
 };
 
-const bmisConfiguration = {
+const bmisCredentials = {
   username: "BmisEncryptedUsername",
   password: "BmisEncryptedPassword"
 };
@@ -159,7 +159,7 @@ const configFileJson = {
   deepDischargeMaxTime: 120,
   customerLogo,
   testCodes,
-  bmisConfiguration,
+  bmisCredentials,
   decisionMappingSchema: 'decisionMappings.json',
   brickBehavior: brickBehavior
 };
@@ -167,9 +167,6 @@ const configFileJson = {
 const may22Configuration = {
   "version": 1,
   "partNumber": "192-011507",
-  "conditions": {
-
-  },
   "translationDatabase": "192-011507-translations-v1.db",
   "internalPrintFormat": {
     "formats": [
@@ -202,54 +199,193 @@ const may22Configuration = {
   "decisionMappingSchema": "192-011507-dcadecisionmapping-v1.json",
   "dcaDefectStringMapping": "192-011507-dcadefectmapping-v1.json",
   "brickBehavior": {
-      "conditions": [
-          {
-              "type": 0,
-              "conditionData": {
-                  "threshold": 1,
-                  "timeUnit": "days"
-              },
-              "brickAction": {
-                  "actionType": 1
-              }
-          },
-          {
-              "type": 1,
-              "conditionData": {
-                  "threshold": 2,
-                  "timeUnit": "days"
-              },
-              "brickAction": {
-                  "actionType": 1
-              }
-          },
-          {
-              "type": 2,
-              "conditionData": {
-                  "threshold": 2,
-                  "timeUnit": "days",
-                  "ssid": "EncryptedSSID"
-              },
-              "brickAction": {
-                  "actionType": 1
-              }
+    "conditions": [
+      {
+        "type": 1,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 2
+        }
+      },
+      {
+        "type": 1,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 1,
+          "parameters": {
+            "warningMessage": "An update is available.\\nTool must update in %1$s days or it will become unusable.\\nApply Update Now?"
           }
-      ]
-  }
+        }
+      },
+      {
+        "type": 2,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 1,
+          "parameters": {
+            "warningMessage": "This tool cannot connect to the server.\\nIf you do not connect to the server within %1$s day(s), the tool will become unusable.\\nPlease connect to Wi-Fi. Do you want to edit Wi-Fi Settings?"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 2
+        }
+      },
+      {
+        "type": 3,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 1,
+          "parameters": {
+            "warningMessage": "This tool cannot connect to the server.\\nIf you do not connect to the server within %1$s day(s), the tool will become unusable.\\nPlease connect to Wi-Fi. Do you want to edit Wi-Fi Settings?"
+          }
+        }
+      }
+    ]
+  },
+  "boostVoltage": boostVoltageSchema,
+  "deepDischargeMaxTime": 1200,  
+  "customerLogo": {
+    "onScreen": [ "onScreenLogo.png" ],
+    "bluetoothPrint": [ "bluetoothPrintLogo.png" ],
+    "internalPrint": [ "internalPrintLogo.png" ],
+    "wifiPrint": [ "wifiPrintLogo.png" ],
+    "email": [ "emailLogo.png" ]
+  },
+  "testCodes": testCodes,
+  "bmisCredentials": bmisCredentials,
+};
+
+const aftermarketConfigFile = {
+  "version": 1,
+  "partNumber": "192-011507",
+  "translationDatabase": "192-011507-translations-v1.db",
+  "internalPrintFormat": {
+    "formats": [
+      {
+        "type": "InVehicleChargeTest",
+        "filename": "192-011507-internalPrint-inv_charge-v1.json"
+      },
+      {
+        "type": "OutOfVehicleChargeTest",
+        "filename": "192-011507-internalPrint-oov_charge-v1.json"
+      },
+      {
+        "type": " BatteryDiagnostics",
+        "filename": "192-011507-internalPrint-batDiag-v1.json"
+      },
+      {
+        "type": "ChargeTest",
+        "filename": "192-011507-internalPrint-charge-v1.json"
+      },
+      {
+        "type": "SystemTest",
+        "filename": "192-011507-internalPrint-system-v1.json"
+      },
+      {
+        "type": "Footer",
+        "filename": "192-011507-footer-v1.json"
+      }
+    ]
+  },
+  "decisionMappingSchema": "192-011507-dcadecisionmapping-v1.json",
+  "dcaDefectStringMapping": "192-011507-dcadefectmapping-v1.json",
+  "brickBehavior": {
+    "conditions": [
+      {
+        "type": 1,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 2
+        }
+      },
+      {
+        "type": 1,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 1,
+          "parameters": {
+            "warningMessage": "An update is available.\\nTool must update in %1$s days or it will become unusable.\\nApply Update Now?"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 1,
+          "parameters": {
+            "warningMessage": "This tool cannot connect to the server.\\nIf you do not connect to the server within %1$s day(s), the tool will become unusable.\\nPlease connect to Wi-Fi. Do you want to edit Wi-Fi Settings?"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 2
+        }
+      },
+      {
+        "type": 3,
+        "conditionData": {
+          "brickWarningThresholdDays": 5,
+          "brickActivationThresholdDays": 10
+        },
+        "brickAction": {
+          "actionType": 1,
+          "parameters": {
+            "warningMessage": "This tool cannot connect to the server.\\nIf you do not connect to the server within %1$s day(s), the tool will become unusable.\\nPlease connect to Wi-Fi. Do you want to edit Wi-Fi Settings?"
+          }
+        }
+      }
+    ]
+  },
+  "deepDischargeMaxTime": 1200,
 };
 
 /* GET users listing. */
-router.get('/api/config', (req, res, next) => {
-  res.send(may22Configuration);
+router.get('/api/v2/ToolConfiguration/Configuration', (req, res, next) => {
+  res.send(aftermarketConfigFile);
 });
 
-router.get('/api/config/version', (req, res, next) => {
+router.get('/api/v2/ToolConfiguration/Version', (req, res, next) => {
   res.send({
     version: 1
   });
 });
 
-router.get('/api/getFile', (req, res, next) => {
+router.get('/api/v2/ToolConfiguration/RawFile', (req, res, next) => {
   const fileName = req.query.fileName;
   switch(fileName) {
     case "192-011507-internalPrint-inv_charge-v1.json":
